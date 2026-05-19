@@ -18,7 +18,7 @@ Para remoção de nós com dois filhos foi utilizada a estratégia do sucessor (
 
 A implementação foi feita utilizando recursividade porque a estrutura da árvore binária já funciona de maneira recursiva naturalmente.
 
-Cada nó possui referências para outras subárvores, então a navegação pela árvore acaba ficando mais simples utilizando chamadas recursivas.
+Cada nó possui referências para outras subárvores, então a navegação pela árvore fica mais simples utilizando chamadas recursivas.
 
 Além disso, a abordagem recursiva facilitou:
 - a busca do nó que deveria ser removido;
