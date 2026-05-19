@@ -11,7 +11,7 @@ public class ArvoreBinaria {
         return raiz == null;
     }
 
-    // ================= INSERÇÃO =================
+    // inserção
 
     public void inserir(Integer valor) {
         raiz = inserirRecursivo(raiz, valor);
@@ -42,7 +42,7 @@ public class ArvoreBinaria {
         return atual;
     }
 
-    // ================= REMOÇÃO =================
+    // remoção
 
     public void remover(Integer valor) {
         raiz = removerRecursivo(raiz, valor);
@@ -73,14 +73,14 @@ public class ArvoreBinaria {
         // encontrou o nó
         else {
 
-            // CASO 1 -> nó folha
+            // caso 1 -> nó folha
             if (atual.getEsquerda() == null &&
                 atual.getDireita() == null) {
 
                 return null;
             }
 
-            // CASO 2 -> nó com apenas um filho
+            // caso 2 -> nó com apenas um filho
 
             if (atual.getEsquerda() == null) {
                 return atual.getDireita();
@@ -90,7 +90,7 @@ public class ArvoreBinaria {
                 return atual.getEsquerda();
             }
 
-            // CASO 3 -> nó com dois filhos
+            // caso 3 -> nó com dois filhos
 
             // pega o sucessor (menor dos maiores)
             No sucessor = encontrarMenor(atual.getDireita());
@@ -120,7 +120,7 @@ public class ArvoreBinaria {
         return atual;
     }
 
-    // ================= PERCURSOS =================
+    // percursos
 
     public void preOrdem(No no) {
 
